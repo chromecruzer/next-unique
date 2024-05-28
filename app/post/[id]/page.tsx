@@ -14,9 +14,9 @@ const Post = ({params}) => {
   return (
     <>
        {viewpost && <main className="container mx-auto px-4 py-6">
-        <h2 className="text-4xl font-bold mb-4"><h3>{viewpost.title}</h3></h2>
+        <h2 className="text-4xl font-bold mb-4"><big>{viewpost.title}</big></h2>
         <p className="text-gray-500">{viewpost.date_of_publish}</p>
-        <img src={viewpost.image || "https://picsum.photos/200"} alt="Post Image" className="my-4"/>
+        <img width={300} height={200} src={viewpost.image || "https://picsum.photos/200"} alt="Post Image" className="my-4"/>
         <p>{viewpost.description}</p>
     </main> }
     </>
