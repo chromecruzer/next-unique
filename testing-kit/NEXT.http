@@ -1,0 +1,14 @@
+# Test the POST endpoint
+POST http://localhost:3000/api/enquiry;
+Content-Type: application/json
+
+{
+  "name": "Mia Malkova",
+  "gender": "Male",
+  "experience": 5
+}
+
+###
+
+# Test the GET endpoint
+GET http://localhost:3000
